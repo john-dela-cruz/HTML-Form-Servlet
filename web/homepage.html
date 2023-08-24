@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Quiz Average</title>
+</head>
+<body>
+	<h2>Quiz Average Calculator</h2>
+	<fieldset>
+		<legend>Quiz Input Form</legend>
+		<form action='computeaverage.action' method='post'>
+			<p>Enter name: 
+				<input type='text' name='name' size='35' 
+					required="required"/>
+			</p>
+			<p>Enter Quiz 1: 
+				<input type="number" name='quiz1' size='3' 
+					required="required" min="1" max="100"/>
+			</p>
+			<p>Enter Quiz 2: 
+				<input type="number" name='quiz2' size='3' 
+					required="required" min="1" max="100"/>
+			</p>	 
+			<p><input type="submit" value='Compute Average'/> &nbsp;&nbsp;&nbsp;
+			   <input type='reset'/>
+			</p>   	
+		</form>
+	</fieldset>
+</body>
+</html>

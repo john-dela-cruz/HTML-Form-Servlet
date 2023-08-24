@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>code04-HTML-Form-Integration-POST-method-using-JavaBean</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ComputeAverageServlet</servlet-name>
+    <servlet-class>ph.edu.iacademy.controller.ComputeAverageServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayDataServlet</servlet-name>
+  	<servlet-class>ph.edu.iacademy.view.DisplayDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComputeAverageServlet</servlet-name>
+    <url-pattern>/computeaverage.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayDataServlet</servlet-name>
+  	<url-pattern>/display.html</url-pattern>
+  </servlet-mapping>
+</web-app>
